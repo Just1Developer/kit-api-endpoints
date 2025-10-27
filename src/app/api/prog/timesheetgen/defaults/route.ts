@@ -19,7 +19,7 @@ import { NextResponse } from 'next/server'
  *
  * <p>Example:</p>
  * <pre>
- * %LAST%_%FIRST_U%_%MM%_%YYYY%
+ * %LAST%_%FIRST_U%_%MM%_%YYYY%.pdf
  * Mustermann_Max_Tobias_04_2025.pdf
  * </pre>
  */

@@ -1,5 +1,4 @@
 interface Response {
-  status: number
   url: string
 }
 
@@ -11,7 +10,5 @@ export const fetchVersion = async () => {
   const { url } = (await fetch(
     'https://github.com/kit-sdq/TimeSheetGenerator/releases/latest',
   )) as Response
-  const version = url.split('/').pop()?.replace('v', '') ?? 'unknown'
-  console.log(version)
-  return version
+  return url.split('/').pop()?.replace('v', '') ?? 'unknown'
 }
