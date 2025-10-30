@@ -33,6 +33,6 @@ export const GET = async () => {
     // Note that the following default value is not official:
     emailTitleAlgo:
       'Stundenzettel / Timesheet %MM_GER% / %MM_ENG% %YYYY% %FIRST% %LAST%',
-    emailReceiverProg: 'programmieren-vorlesung@cs.kit.edu',
+    emailRecipientProg: 'programmieren-vorlesung@cs.kit.edu',
   })
 }
