@@ -1,3 +1,4 @@
+import { presets } from '@/lib/presets'
 import { fetchVersion } from '@/lib/version'
 import { NextResponse } from 'next/server'
 
@@ -28,12 +29,6 @@ export const GET = async () => {
   const version = await fetchVersion()
   return NextResponse.json({
     version,
-    fileFormatProg: '%LAST%_%FIRST_U%_%MM%_%YYYY%',
-    fileFormatAlgo: '%LAST%_%FIRST_U%_%MM%_%YYYY%',
-    emailTitleProg: 'Stundenzettel %FIRST% %LAST% %YYYY%-%MM%',
-    // Note that the following default value is not official:
-    emailTitleAlgo:
-      'Stundenzettel / Timesheet %MM_GER% / %MM_ENG% %YYYY% %FIRST% %LAST%',
-    emailRecipientProg: 'programmieren-vorlesung@cs.kit.edu',
+    presets,
   })
 }
