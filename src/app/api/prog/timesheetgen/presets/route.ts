@@ -26,9 +26,7 @@ import { NextResponse } from 'next/server'
  * </pre>
  */
 export const GET = async () => {
-  const version = await fetchVersion()
   return NextResponse.json({
-    version,
     presets,
   })
 }

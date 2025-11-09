@@ -12,7 +12,7 @@ interface Preset {
 
 const preset_programming: Preset = {
   id: 'tut-proggen-sem20252026',
-  name: 'AAAAAAAAAAAAA (WS 25/26)',
+  name: 'Programmieren (WS 25/26)',
   visible: true,
   description: 'Default settings for Programming',
   fileFormat: '%LAST%_%FIRST_U%_%MM%_%YYYY%',
