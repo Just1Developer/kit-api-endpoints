@@ -1,5 +1,4 @@
 import { presets } from '@/lib/presets'
-import { fetchVersion } from '@/lib/version'
 import { NextResponse } from 'next/server'
 
 /**
