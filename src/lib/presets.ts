@@ -44,7 +44,7 @@ const preset_gbi: Preset = {
   department: 'GBI',
   mailSubject: '%FIRST% %LAST%, Fakultät für Informatik, %PERS_NR%',
   mailRecipient: 'zeiterfassung-hiwi@pse.kit.edu',
-  mailRecipientCC: ['torsten-ueckerdt@kit.edu'],
+  mailRecipientCC: ['torsten.ueckerdt@kit.edu'],
 }
 
 export const presets: Preset[] = [preset_programming, preset_algo, preset_gbi]
