@@ -47,4 +47,16 @@ const preset_gbi: Preset = {
   mailRecipientCC: ['torsten.ueckerdt@kit.edu'],
 }
 
-export const presets: Preset[] = [preset_programming, preset_algo, preset_gbi]
+const preset_lti: Preset = {
+  id: 'etit-lti-mitarbeiter',
+  name: 'Lichttechnisches Institut (LTI)',
+  visible: false,
+  description: 'Default settings for LTI',
+  fileFormat: '%LAST%_%FIRST_U%_%MM%_%YYYY%',
+  department: 'LTI AG ??',
+  mailSubject: '%FIRST% %LAST%, Fakultät für Informatik, %PERS_NR%',
+  mailRecipient: 'zeiterfassung-hiwi@pse.kit.edu',
+  mailRecipientCC: [''],
+}
+
+export const presets: Preset[] = [preset_programming, preset_algo, preset_gbi ]
