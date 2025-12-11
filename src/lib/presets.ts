@@ -56,7 +56,24 @@ const preset_lti: Preset = {
   department: 'LTI AG ??',
   mailSubject: '%FIRST% %LAST%, Fakultät für Informatik, %PERS_NR%',
   mailRecipient: 'zeiterfassung-hiwi@pse.kit.edu',
-  mailRecipientCC: [''],
+  mailRecipientCC: [],
 }
 
-export const presets: Preset[] = [preset_programming, preset_algo, preset_gbi ]
+const preset_tgi: Preset = {
+  id: 'tut-tgi-sem20252026',
+  name: 'Theoretische Grundlagen der Informatik (WS 25/26)',
+  visible: true,
+  description: 'Default settings for TGI',
+  fileFormat: '%LAST%_%FIRST_U%_%MM%_%YYYY%',
+  department: 'Fakultät für Informatik',
+  mailSubject: 'Arbeitszeitdokumentation %FIRST% %LAST% %MM_GER%',
+  mailRecipient: 'tgi-jmq@mail.informatik.kit.edu',
+  mailRecipientCC: [],
+}
+
+export const presets: Preset[] = [
+  preset_programming,
+  preset_algo,
+  preset_gbi,
+  preset_tgi,
+]
