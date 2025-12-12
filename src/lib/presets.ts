@@ -65,7 +65,7 @@ const preset_tgi: Preset = {
   visible: true,
   description: 'Default settings for TGI',
   fileFormat: '%LAST%_%FIRST_U%_%MM%_%YYYY%',
-  department: 'Fakultät für Informatik',
+  department: 'Fakultät für Informatik (TGI)',
   mailSubject: 'Arbeitszeitdokumentation %FIRST% %LAST% %MM_GER%',
   mailRecipient: 'tgi-jmq@mail.informatik.kit.edu',
   mailRecipientCC: [],
