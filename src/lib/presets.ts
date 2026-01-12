@@ -88,7 +88,7 @@ const preset_tgi: Preset = {
 const preset_programming_post2026: Preset = {
   id: 'tut-proggen-sem2026',
   name: 'Programmieren (SS 26)',
-  visible: true,
+  visible: false,
   visibleFrom: '2026-04-01',
   visibleUntil: '',
   description: 'Default settings for Programming',
@@ -102,7 +102,7 @@ const preset_programming_post2026: Preset = {
 const preset_algo_post2026: Preset = {
   id: 'tut-algo-sem2026',
   name: 'Algorithmen (SS 26)',
-  visible: true,
+  visible: false,
   visibleFrom: '2026-04-01',
   visibleUntil: '',
   description: 'Default settings for Algorithms',
@@ -117,7 +117,7 @@ const preset_algo_post2026: Preset = {
 const preset_swt_post2026: Preset = {
   id: 'tut-swt-sem2026',
   name: 'Grundbegriffe der Informatik (SS 26)',
-  visible: true,
+  visible: false,
   visibleFrom: '2026-10-01',
   visibleUntil: '',
   description: 'Default settings for SWT',
@@ -131,7 +131,7 @@ const preset_swt_post2026: Preset = {
 const preset_dt_post2026: Preset = {
   id: 'tut-dt-sem2026',
   name: 'Digitaltechnik (SS 26)',
-  visible: true,
+  visible: false,
   visibleFrom: '2026-04-01',
   visibleUntil: '',
   description: 'Default settings for DT',
