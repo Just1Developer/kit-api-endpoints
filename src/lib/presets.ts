@@ -17,7 +17,7 @@ const preset_programming: Preset = {
   name: 'Programmieren (WS 25/26)',
   visible: true,
   visibleFrom: '',
-  visibleUntil: '2026-03-31',
+  visibleUntil: '2026-04-20',
   description: 'Default settings for Programming',
   fileFormat: '%LAST%_%FIRST_U%_%MM%_%YYYY%',
   department: 'KASTEL / Programmieren',
@@ -46,7 +46,7 @@ const preset_gbi: Preset = {
   name: 'Grundbegriffe der Informatik (WS 25/26)',
   visible: true,
   visibleFrom: '',
-  visibleUntil: '2026-04-30',
+  visibleUntil: '2026-04-20',
   description: 'Default settings for GBI',
   fileFormat: '%LAST%_%FIRST_U%_%MM%_%YYYY%',
   department: 'GBI',
@@ -74,7 +74,7 @@ const preset_tgi: Preset = {
   name: 'Theoretische Grundlagen der Informatik (WS 25/26)',
   visible: true,
   visibleFrom: '',
-  visibleUntil: '2026-03-31',
+  visibleUntil: '2026-04-20',
   description: 'Default settings for TGI',
   fileFormat: '%LAST%_%FIRST_U%_%MM%_%YYYY%',
   department: 'Fakultät für Informatik (TGI)',
@@ -91,7 +91,7 @@ const preset_programming_post2026: Preset = {
   visible: false,
   visibleFrom: '2026-04-01',
   visibleUntil: '',
-  description: 'Default settings for Programming',
+  description: 'Default settings for Programming for summer 2026',
   fileFormat: '%LAST%_%FIRST_U%_%MM%_%YYYY%',
   department: 'KIT-Fakultät für Informatik / Tutorium Programmieren (Prof. Koziolek)',
   mailSubject: 'Stundenzettel %FIRST% %LAST% %YYYY%-%MM%',
@@ -105,7 +105,7 @@ const preset_algo_post2026: Preset = {
   visible: false,
   visibleFrom: '2026-04-01',
   visibleUntil: '',
-  description: 'Default settings for Algorithms',
+  description: 'Default settings for Algorithms I for summer 2026',
   fileFormat: '%LAST%_%FIRST_U%_%MM%_%YYYY%',
   department: 'KIT-Fakultät für Informatik / Tutorium Algorithmen I (Prof. Sanders)',
   mailSubject:
@@ -116,16 +116,16 @@ const preset_algo_post2026: Preset = {
 
 const preset_swt_post2026: Preset = {
   id: 'tut-swt-sem2026',
-  name: 'Grundbegriffe der Informatik (SS 26)',
+  name: 'Softwaretechnik I (SS 26)',
   visible: false,
-  visibleFrom: '2026-10-01',
+  visibleFrom: '2026-04-01',
   visibleUntil: '',
-  description: 'Default settings for SWT',
-  fileFormat: '%LAST%_%FIRST_U%_%MM%_%YYYY%',
+  description: 'Default settings for SWT for summer 2026',
+  fileFormat: '%LAST%_%FIRST_U%_%MM%_%YYYY%',                                               // (?)
   department: 'KIT-Fakultät für Informatik / Tutorium Softwaretechnik (Prof. Schaefer)',
-  mailSubject: '%FIRST% %LAST%, Fakultät für Informatik, %PERS_NR%',
-  mailRecipient: 'zeiterfassung-hiwi@pse.kit.edu',
-  mailRecipientCC: [],
+  mailSubject: '%FIRST% %LAST%, Fakultät für Informatik, %PERS_NR%',                        // ?
+  mailRecipient: 'zeiterfassung-hiwi@pse.kit.edu',                                          // ?
+  mailRecipientCC: [],                                                                      // ?
 }
 
 const preset_dt_post2026: Preset = {
@@ -134,12 +134,12 @@ const preset_dt_post2026: Preset = {
   visible: false,
   visibleFrom: '2026-04-01',
   visibleUntil: '',
-  description: 'Default settings for DT',
-  fileFormat: '%LAST%_%FIRST_U%_%MM%_%YYYY%',
+  description: 'Default settings for DT for summer 2026',
+  fileFormat: '%LAST%_%FIRST_U%_%MM%_%YYYY%',                                               // (?)
   department: 'KIT-Fakultät für Informatik / Tutorium Digitaltechnik (Prof. Karl)',
-  mailSubject: 'Arbeitszeitdokumentation %FIRST% %LAST% %MM_GER%',
-  mailRecipient: '',
-  mailRecipientCC: [],
+  mailSubject: 'Arbeitszeitdokumentation %FIRST% %LAST% %MM_GER%',                          // ?
+  mailRecipient: '',                                                                        // ?
+  mailRecipientCC: [],                                                                      // ?
 }
 
 export const presets: Preset[] = [
@@ -149,6 +149,6 @@ export const presets: Preset[] = [
   preset_tgi,
   preset_programming_post2026,
   preset_algo_post2026,
-  //preset_swt_post2026,
-  //preset_dt_post2026
+  preset_swt_post2026,
+  preset_dt_post2026
 ]
