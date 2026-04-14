@@ -74,7 +74,7 @@ const preset_tgi: Preset = {
   name: 'Theoretische Grundlagen der Informatik (WS 25/26)',
   visible: true,
   visibleFrom: '',
-  visibleUntil: '2026-04-20',
+  visibleUntil: '',//'2026-04-20',
   description: 'Default settings for TGI',
   fileFormat: '%LAST%_%FIRST_U%_%MM%_%YYYY%',
   department: 'Fakultät für Informatik (TGI)',
@@ -109,7 +109,7 @@ const preset_algo_post2026: Preset = {
   fileFormat: '%LAST%_%FIRST_U%_%MM%_%YYYY%',
   department: 'KIT-Fakultät für Informatik / Tutorium Algorithmen I (Prof. Sanders)',
   mailSubject:
-    'Stundenzettel / Timesheet %MM_GER% / %MM_ENG% %YYYY% %FIRST% %LAST%',
+    'Stundenzettel %MM_GER% %YYYY%',
   mailRecipient: 'algo1@mail.informatik.kit.edu',
   mailRecipientCC: [],
 }
@@ -123,7 +123,7 @@ const preset_swt_post2026: Preset = {
   description: 'Default settings for SWT for summer 2026',
   fileFormat: '%LAST%_%FIRST_U%_%MM%_%YYYY%',                                               // (?)
   department: 'KIT-Fakultät für Informatik / Tutorium Softwaretechnik (Prof. Schaefer)',
-  mailSubject: '%FIRST% %LAST%, Fakultät für Informatik, %PERS_NR%',                        // ?
+  mailSubject: 'Stundenzettel %FIRST% %LAST% %YYYY%-%MM%',                                  // ?
   mailRecipient: 'zeiterfassung-hiwi@pse.kit.edu',                                          // ?
   mailRecipientCC: [],                                                                      // ?
 }
