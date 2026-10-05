@@ -12,72 +12,57 @@ interface Preset {
   mailRecipientCC: string[]
 }
 
-const preset_programming: Preset = {
-  id: 'tut-proggen-sem20252026',
-  name: 'Programmieren (WS 25/26)',
+const preset_programming_winter: Preset = {
+  id: 'tut-proggen-sem20262027',
+  name: 'Programmieren (WS 26/27)',
   visible: true,
-  visibleFrom: '',
-  visibleUntil: '2026-04-20',
-  description: 'Default settings for Programming',
+  visibleFrom: '2026-10-01',
+  visibleUntil: '2027-04-30',
+  description: 'Default settings for Programming for winter 2026/27',
   fileFormat: '%LAST%_%FIRST_U%_%MM%_%YYYY%',
-  department: 'KASTEL / Programmieren',
+  department: 'KIT-Fakultät für Informatik / Tutorium Programmieren (Prof. Koziolek)',
   mailSubject: 'Stundenzettel %FIRST% %LAST% %YYYY%-%MM%',
   mailRecipient: 'programmieren-vorlesung@cs.kit.edu',
   mailRecipientCC: [],
 }
 
-const preset_algo: Preset = {
-  id: 'tut-algo-sem2025',
-  name: 'Algorithmen (SS 25)',
-  visible: false,
-  visibleFrom: '',
-  visibleUntil: '2026-03-31',
-  description: 'Default settings for Algorithms',
-  fileFormat: '%LAST%_%FIRST_U%_%MM%_%YYYY%',
-  department: 'ITI / Algorithmen',
-  mailSubject:
-    'Stundenzettel / Timesheet %MM_GER% / %MM_ENG% %YYYY% %FIRST% %LAST%',
-  mailRecipient: 'algo1@mail.informatik.kit.edu',
-  mailRecipientCC: [],
-}
-
-const preset_gbi: Preset = {
-  id: 'tut-gbi-sem20252026',
-  name: 'Grundbegriffe der Informatik (WS 25/26)',
+const preset_gti: Preset = {
+  id: 'tut-gti-sem20262027',
+  name: 'Grundlagen der theoretischen Informatik (WS 26/27)',
   visible: true,
-  visibleFrom: '',
-  visibleUntil: '2026-04-20',
-  description: 'Default settings for GBI',
+  visibleFrom: '2026-10-01',
+  visibleUntil: '2027-04-30',
+  description: 'Default settings for GTI (WS 26/27)',
   fileFormat: '%LAST%_%FIRST_U%_%MM%_%YYYY%',
-  department: 'GBI',
+  department: 'KIT-Fakultät für Informatik / Tutorium GTI (Ueckerdt)',
   mailSubject: '%FIRST% %LAST%, Fakultät für Informatik, %PERS_NR%',
   mailRecipient: 'zeiterfassung-hiwi@pse.kit.edu',
   mailRecipientCC: ['torsten.ueckerdt@kit.edu'],
 }
 
-const preset_lti: Preset = {
-  id: 'etit-lti-mitarbeiter',
-  name: 'Lichttechnisches Institut (LTI)',
-  visible: false,
-  visibleFrom: '',
-  visibleUntil: '',
-  description: 'Default settings for LTI',
-  fileFormat: '%LAST%_%FIRST_U%_%MM%_%YYYY%',
-  department: 'LTI AG ??',
-  mailSubject: '%FIRST% %LAST%, Fakultät für Informatik, %PERS_NR%',
-  mailRecipient: 'zeiterfassung-hiwi@pse.kit.edu',
-  mailRecipientCC: [],
+const preset_dt_winter: Preset = {
+  id: 'tut-dt-sem20262027',
+  name: 'Digitaltechnik (WS 26/27)',
+  visible: true,
+  visibleFrom: '2026-10-01',
+  visibleUntil: '2027-04-30',
+  description: 'Default settings for DT for winter 2026/27',
+  fileFormat: '%LAST%_%FIRST_U%_%MM%_%YYYY%',                                               // (?)
+  department: 'KIT-Fakultät für Informatik / Tutorium Digitaltechnik (Prof. Karl)',
+  mailSubject: 'Arbeitszeitdokumentation %FIRST% %LAST% %MM_GER%',                          // ?
+  mailRecipient: '',                                                                        // ?
+  mailRecipientCC: [],                                                                      // ?
 }
 
 const preset_tgi: Preset = {
-  id: 'tut-tgi-sem20252026',
-  name: 'Theoretische Grundlagen der Informatik (WS 25/26)',
+  id: 'tut-tgi-sem20262027',
+  name: 'Theoretische Grundlagen der Informatik (WS 26/27)',
   visible: true,
-  visibleFrom: '',
-  visibleUntil: '',//'2026-04-20',
+  visibleFrom: '2026-10-01',
+  visibleUntil: '2027-04-30',
   description: 'Default settings for TGI',
   fileFormat: '%LAST%_%FIRST_U%_%MM%_%YYYY%',
-  department: 'Fakultät für Informatik (TGI)',
+  department: 'KIT-Fakultät für Informatik / Tutorium TGI (Prof. Müller-Quade)',
   mailSubject: 'Arbeitszeitdokumentation %FIRST% %LAST% %MM_GER%',
   mailRecipient: 'tgi-jmq@mail.informatik.kit.edu',
   mailRecipientCC: [],
@@ -85,12 +70,12 @@ const preset_tgi: Preset = {
 
 // From summer semester 2026, the names should be different.
 
-const preset_programming_post2026: Preset = {
+const preset_programming_summer: Preset = {
   id: 'tut-proggen-sem2026',
   name: 'Programmieren (SS 26)',
   visible: true,
   visibleFrom: '2026-04-01',
-  visibleUntil: '',
+  visibleUntil: '2026-10-31',
   description: 'Default settings for Programming for summer 2026',
   fileFormat: '%LAST%_%FIRST_U%_%MM%_%YYYY%',
   department: 'KIT-Fakultät für Informatik / Tutorium Programmieren (Prof. Koziolek)',
@@ -99,12 +84,12 @@ const preset_programming_post2026: Preset = {
   mailRecipientCC: [],
 }
 
-const preset_algo_post2026: Preset = {
+const preset_algo_summer: Preset = {
   id: 'tut-algo-sem2026',
   name: 'Algorithmen (SS 26)',
   visible: true,
   visibleFrom: '2026-04-01',
-  visibleUntil: '',
+  visibleUntil: '2026-10-31',
   description: 'Default settings for Algorithms I for summer 2026',
   fileFormat: '%LAST%_%FIRST_U%_%MM%_%YYYY%',
   department: 'KIT-Fakultät für Informatik / Tutorium Algorithmen I (Prof. Sanders)',
@@ -114,12 +99,12 @@ const preset_algo_post2026: Preset = {
   mailRecipientCC: [],
 }
 
-const preset_swt_post2026: Preset = {
+const preset_swt_summer: Preset = {
   id: 'tut-swt-sem2026',
   name: 'Softwaretechnik I (SS 26)',
   visible: true,
   visibleFrom: '2026-04-01',
-  visibleUntil: '',
+  visibleUntil: '2026-10-31',
   description: 'Default settings for SWT for summer 2026',
   fileFormat: '%LAST%_%FIRST_U%_%MM%_%YYYY%',                                               // (?)
   department: 'KIT-Fakultät für Informatik / Tutorium Softwaretechnik (Prof. Schaefer)',
@@ -128,12 +113,12 @@ const preset_swt_post2026: Preset = {
   mailRecipientCC: [],                                                                      // ?
 }
 
-const preset_dt_post2026: Preset = {
+const preset_dt_summer: Preset = {
   id: 'tut-dt-sem2026',
   name: 'Digitaltechnik (SS 26)',
   visible: true,
   visibleFrom: '2026-04-01',
-  visibleUntil: '',
+  visibleUntil: '2026-10-31',
   description: 'Default settings for DT for summer 2026',
   fileFormat: '%LAST%_%FIRST_U%_%MM%_%YYYY%',                                               // (?)
   department: 'KIT-Fakultät für Informatik / Tutorium Digitaltechnik (Prof. Karl)',
@@ -143,12 +128,12 @@ const preset_dt_post2026: Preset = {
 }
 
 export const presets: Preset[] = [
-  preset_programming,
-  preset_algo,
-  preset_gbi,
+  preset_programming_summer,
+  preset_programming_winter,
+  preset_algo_summer,
+  preset_gti,
   preset_tgi,
-  preset_programming_post2026,
-  preset_algo_post2026,
-  preset_swt_post2026,
-  preset_dt_post2026
+  preset_dt_summer,
+  preset_dt_winter,
+  preset_swt_summer
 ]
