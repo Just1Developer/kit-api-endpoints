@@ -22,7 +22,7 @@ const preset_programming_winter: Preset = {
   fileFormat: '%LAST%_%FIRST_U%_%MM%_%YYYY%',
   department:
     'KIT-Fakultät für Informatik / Tutorium Programmieren (Prof. Koziolek)',
-  mailSubject: 'Stundenzettel %FIRST% %LAST% %YYYY%-%MM%',
+  mailSubject: 'Stundenzettel %FIRST% %LAST% %YY%-%MM%',
   mailRecipient: 'programmieren-vorlesung@cs.kit.edu',
   mailRecipientCC: [],
 }
@@ -82,7 +82,7 @@ const preset_programming_summer: Preset = {
   fileFormat: '%LAST%_%FIRST_U%_%MM%_%YYYY%',
   department:
     'KIT-Fakultät für Informatik / Tutorium Programmieren (Prof. Koziolek)',
-  mailSubject: 'Stundenzettel %FIRST% %LAST% %YYYY%-%MM%',
+  mailSubject: 'Stundenzettel %FIRST% %LAST% %YY%-%MM%',
   mailRecipient: 'programmieren-vorlesung@cs.kit.edu',
   mailRecipientCC: [],
 }
