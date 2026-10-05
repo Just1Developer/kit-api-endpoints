@@ -20,7 +20,8 @@ const preset_programming_winter: Preset = {
   visibleUntil: '2027-04-30',
   description: 'Default settings for Programming for winter 2026/27',
   fileFormat: '%LAST%_%FIRST_U%_%MM%_%YYYY%',
-  department: 'KIT-Fakultät für Informatik / Tutorium Programmieren (Prof. Koziolek)',
+  department:
+    'KIT-Fakultät für Informatik / Tutorium Programmieren (Prof. Koziolek)',
   mailSubject: 'Stundenzettel %FIRST% %LAST% %YYYY%-%MM%',
   mailRecipient: 'programmieren-vorlesung@cs.kit.edu',
   mailRecipientCC: [],
@@ -47,11 +48,12 @@ const preset_dt_winter: Preset = {
   visibleFrom: '2026-10-01',
   visibleUntil: '2027-04-30',
   description: 'Default settings for DT for winter 2026/27',
-  fileFormat: '%LAST%_%FIRST_U%_%MM%_%YYYY%',                                               // (?)
-  department: 'KIT-Fakultät für Informatik / Tutorium Digitaltechnik (Prof. Karl)',
-  mailSubject: 'Arbeitszeitdokumentation %FIRST% %LAST% %MM_GER%',                          // ?
-  mailRecipient: '',                                                                        // ?
-  mailRecipientCC: [],                                                                      // ?
+  fileFormat: '%LAST%_%FIRST_U%_%MM%_%YYYY%', // (?)
+  department:
+    'KIT-Fakultät für Informatik / Tutorium Digitaltechnik (Prof. Karl)',
+  mailSubject: 'Arbeitszeitdokumentation %FIRST% %LAST% %MM_GER%', // ?
+  mailRecipient: '', // ?
+  mailRecipientCC: [], // ?
 }
 
 const preset_tgi: Preset = {
@@ -78,7 +80,8 @@ const preset_programming_summer: Preset = {
   visibleUntil: '2026-10-31',
   description: 'Default settings for Programming for summer 2026',
   fileFormat: '%LAST%_%FIRST_U%_%MM%_%YYYY%',
-  department: 'KIT-Fakultät für Informatik / Tutorium Programmieren (Prof. Koziolek)',
+  department:
+    'KIT-Fakultät für Informatik / Tutorium Programmieren (Prof. Koziolek)',
   mailSubject: 'Stundenzettel %FIRST% %LAST% %YYYY%-%MM%',
   mailRecipient: 'programmieren-vorlesung@cs.kit.edu',
   mailRecipientCC: [],
@@ -92,9 +95,9 @@ const preset_algo_summer: Preset = {
   visibleUntil: '2026-10-31',
   description: 'Default settings for Algorithms I for summer 2026',
   fileFormat: '%LAST%_%FIRST_U%_%MM%_%YYYY%',
-  department: 'KIT-Fakultät für Informatik / Tutorium Algorithmen I (Prof. Sanders)',
-  mailSubject:
-    'Stundenzettel %MM_GER% %YYYY%',
+  department:
+    'KIT-Fakultät für Informatik / Tutorium Algorithmen I (Prof. Sanders)',
+  mailSubject: 'Stundenzettel %MM_GER% %YYYY%',
   mailRecipient: 'algo1@mail.informatik.kit.edu',
   mailRecipientCC: [],
 }
@@ -106,11 +109,12 @@ const preset_swt_summer: Preset = {
   visibleFrom: '2026-04-01',
   visibleUntil: '2026-10-31',
   description: 'Default settings for SWT for summer 2026',
-  fileFormat: '%LAST%_%FIRST_U%_%MM%_%YYYY%',                                               // (?)
-  department: 'KIT-Fakultät für Informatik / Tutorium Softwaretechnik (Prof. Schaefer)',
-  mailSubject: 'Stundenzettel %FIRST% %LAST% %YYYY%-%MM%',                                  // ?
-  mailRecipient: 'zeiterfassung-hiwi@pse.kit.edu',                                          // ?
-  mailRecipientCC: [],                                                                      // ?
+  fileFormat: '%LAST%_%FIRST_U%_%MM%_%YYYY%', // (?)
+  department:
+    'KIT-Fakultät für Informatik / Tutorium Softwaretechnik (Prof. Schaefer)',
+  mailSubject: 'Stundenzettel %FIRST% %LAST% %YYYY%-%MM%', // ?
+  mailRecipient: 'zeiterfassung-hiwi@pse.kit.edu', // ?
+  mailRecipientCC: [], // ?
 }
 
 const preset_dt_summer: Preset = {
@@ -120,11 +124,12 @@ const preset_dt_summer: Preset = {
   visibleFrom: '2026-04-01',
   visibleUntil: '2026-10-31',
   description: 'Default settings for DT for summer 2026',
-  fileFormat: '%LAST%_%FIRST_U%_%MM%_%YYYY%',                                               // (?)
-  department: 'KIT-Fakultät für Informatik / Tutorium Digitaltechnik (Prof. Karl)',
-  mailSubject: 'Arbeitszeitdokumentation %FIRST% %LAST% %MM_GER%',                          // ?
-  mailRecipient: '',                                                                        // ?
-  mailRecipientCC: [],                                                                      // ?
+  fileFormat: '%LAST%_%FIRST_U%_%MM%_%YYYY%', // (?)
+  department:
+    'KIT-Fakultät für Informatik / Tutorium Digitaltechnik (Prof. Karl)',
+  mailSubject: 'Arbeitszeitdokumentation %FIRST% %LAST% %MM_GER%', // ?
+  mailRecipient: '', // ?
+  mailRecipientCC: [], // ?
 }
 
 export const presets: Preset[] = [
@@ -135,5 +140,5 @@ export const presets: Preset[] = [
   preset_tgi,
   preset_dt_summer,
   preset_dt_winter,
-  preset_swt_summer
+  preset_swt_summer,
 ]
